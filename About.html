@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            
+            text-align: center;
+            
+            background-color: rgb(206, 50, 76);
+            color: white;
+            width: 200px;
+            align-items: center;
+            height:50px;
+            justify-content: center;
+        }
+        ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: aqua;
+        height: 30px;
+        font-size: 20px ;
+        
+       }
+       li{
+        display:inline;
+
+       }
+       li a{
+        align-items: center;
+        color: rgb(139, 48, 48);
+        text-align: center; 
+        padding: 19px 30px;
+        text-decoration: none;
+
+
+       }
+
+
+
+
+        
+        li a:hover{
+            background-color: rgb(204, 141, 151);
+            height: 20px;
+            color: grey;
+        }
+        dl{
+            font-weight: bold ;
+            font-size: 30px;
+            color:black;
+        }
+        dd{
+            font-size: 25px;
+            color: rgb(243, 18, 18);
+        }
+        ul li a.active {
+        border-top-color: rgb(247, 247, 26);
+        border-bottom-color: rgb(247, 247, 26);
+        color: rgb(247, 247, 26);
+      }
+      h3 {
+        text-align: center;
+        margin-top: 150px;
+        font-size: 30px;
+      }
+      .skills-area {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20%;
+      }
+      .skill {
+        position: relative;
+        margin-bottom: 40px;
+      }
+      .skill-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .skill-bar {
+        width: 100%;
+        background: rgba(164, 159, 159, 0.6);
+        height: 40px;
+        z-index: -1;
+        border-radius: 100px;
+        position: absolute;
+      }
+      .skill-fill {
+        background: rgb(233, 78, 78);
+        height: 40px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 30px;
+        overflow: hidden;
+      }
+      .skill-percent {
+        font-size: 20px;
+      }
+      .html {
+        animation: html 2s;
+        width: 80%;
+      }
+      .css {
+        animation: css 2s;
+        width: 80%;
+      }
+      .js {
+        animation: js 2s;
+        width: 60%;
+      }
+      .bootstrap {
+        animation: bootstrap 2s;
+        width: 60%;
+      }
+      @keyframes html {
+        from {
+          width: 0;
+        }
+        to {
+          width: 80%;
+        }
+      }
+      @keyframes css {
+        from {
+          width: 0;
+        }
+        to {
+          width: 80%;
+        }
+      }
+      @keyframes js {
+        from {
+          width: 0;
+        }
+        to {
+          width:70%;
+        }
+      }
+      @keyframes bootstrap {
+        from {
+          width: 0;
+        }
+        to {
+          width:70%;
+        }
+      }
+
+      @media only screen and (max-width: 750px) {
+        .skill-area {
+          padding: 0 5%;
+        }
+      }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+           <li><a href="index.html" class="active"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a></li>
+            <li><a href="About.html"><i class="fa fa-bars"></i>&nbsp;About</a></li>
+            <li><a href="Project.html"><i class="fa fa-file"></i>&nbsp;Project</a></li>
+         <li><a href="Contact.html"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
+    </ul>
+        
+    </nav>
+    <h3>My Skills</h3>
+    <div class="skills-area">
+      <div class="skill">
+        <div class="skill-title">HTML</div>
+        <div class="skill-bar"></div>
+        <div class="html skill-fill">
+        <span class="skill-percent">80%</span>
+      </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">CSS</div>
+        <div class="skill-bar"></div>
+        <div class="css skill-fill">
+        <span class="skill-percent">80%</span>
+      </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">JavaScript</div>
+        <div class="skill-bar"></div>
+        <div class="js skill-fill">
+        <span class="skill-percent">70%</span>
+      </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">Bootstrap 5</div>
+        <div class="skill-bar"></div>
+        <div class="bootstrap skill-fill">
+        <span class="skill-percent">70%</span>
+      </div>
+      </div>
+    </div>
+    
+</body>
+</html>

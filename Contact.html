@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+         ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: aqua;
+        height: 30px;
+        font-size: 20px ;
+        
+       }
+       li{
+        display:inline;
+
+       }
+       li a{
+        align-items: center;
+        color: rgb(139, 48, 48);
+        text-align: center; 
+        padding: 19px 30px;
+        text-decoration: none;
+
+
+       }
+
+
+
+
+        
+        li a:hover{
+            background-color: rgb(204, 141, 151);
+            height: 20px;
+            color: grey;
+        }
+        img{
+            border-radius:40%;
+            width:200px;
+            height:auto;
+            margin-left:30px;
+            
+        }
+        .container{
+            padding-top:5px;
+            font-size:25px;
+        
+            
+        }
+        ul li a.active {
+    border-top-color: rgb(247, 247, 26);
+    border-bottom-color: rgb(247, 247, 26);
+    color: rgb(247, 247, 26);
+  }
+         /* .container > h3{
+          text-align: center;
+          margin-top: 150px;
+          margin-bottom: 40px;
+          font-size: 24px;
+        } */
+        .contact {
+          min-height: 100vh;
+          background-color: #cfd3d9;
+          padding: 50px;
+          text-align: center;
+        }
+        .container {
+          max-width: 80%;
+          margin: 0 auto;
+        }
+        .container h3 {
+          font-size: 30px;
+          margin-bottom: 40px;
+          /* color: #333; */
+        }
+        .contact-wrapper {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          gap: 50px;
+        }
+        .contact-form {
+          text-align: left;
+        }
+        .contact-form h4   {
+          font-size: 24px;
+          margin-bottom: 20px;
+          /* color: #333; */
+        }
+        .form-group {
+          margin-bottom: 20px;
+        }
+        input,
+        textarea {
+          width: 100%;
+          padding: 12px;
+          border-radius: 8px;
+          border: none;
+          background-color: whitesmoke;
+          color: #333;
+        }
+        input:focus,
+        textarea:focus {
+          outline: none;
+          box-shadow: 0 0 8px #bbb;
+        }
+        button {
+          display: inline-block;
+          padding: 12px 24px;
+          background-color: rgb(162, 114, 209);
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          transition: 0.3s ease;
+        }
+        button:hover {
+          background-color: rgb(142, 48, 235);
+        }
+        .contact-info {
+          text-align: left;
+        }
+        .contact-info h4 { 
+          font-size: 24px;
+          margin-bottom: 20px;
+          /* color: #333; */
+        }
+        .contact-info p {
+          margin-bottom: 10px;
+          color: #555;
+        }
+        .contact-info i {
+          color: rgb(142, 48, 235);
+          margin-right: 10px;
+          
+        }
+        @media screen and (max-width: 750px) {
+          .container {
+            padding: 20px;
+          }
+          .contact-wrapper {
+            grid-template-columns: 1fr;
+          }
+          .contact-info {
+          text-align: left;
+        }
+        /* .contact-info i {
+          color: rgb(142, 48, 235);
+          text-align: center;
+        } */
+  
+        }
+      </style>
+    
+</head>
+<body>
+    <nav>
+        <ul>
+           <li><a href="index.html" class="active"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a></li>
+            <li><a href="About.html"><i class="fa fa-bars"></i>&nbsp;About</a></li>
+            <li><a href="Project.html"><i class="fa fa-file"></i>&nbsp;Project</a></li>
+         <li><a href="Contact.html"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
+    </ul>
+    <section class="contact">
+        <div class="container">
+          <h3>Contact me</h3>
+          <div class="contact-wrapper">
+            <div class="contact-form">
+              <h4>Send me a message</h4>
+              <form action="">
+                <div class="form-group">
+                  <input type="text" name="name" id="" placeholder="Your Name" />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    id=""
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    id=""
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+            <div class="contact-info">
+              <h4>Contact Information</h4>
+              <div>
+                <i
+                  class="fa-solid fa-user"
+                  style="font-size: 20px; margin-bottom: 20px;color: rgb(142, 48, 235);"
+                ></i
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phyoe Thinzar Soe
+              </div>
+              <div>
+                <i
+                  class="fa-solid fa-phone"
+                  style="font-size: 20px; margin-bottom: 20px;color: rgb(142, 48, 235);"
+                ></i
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+95782611064
+              </div>
+              <div>
+                <i
+                  class="fa-solid fa-envelope"
+                  style="font-size: 20px; margin-bottom: 40px;color: rgb(142, 48, 235);"
+                ></i
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phyoethinzar99@gmail.com
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+</body>
+</html>
